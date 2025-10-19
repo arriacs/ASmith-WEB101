@@ -1,0 +1,227 @@
+/*** You will not need this file until Unit 3 ***/
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
+
+/*** Font Definitions ***/
+@font-face {
+  font-family: "Undertale";
+  src: url(fonts/Undertale.ttf) format("truetype");
+}
+html {
+    background-color: var(--bg-color);
+}
+
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+***/
+
+body {
+    /* Add a background color or image */
+    background-color: var(--bg-color); /* see bottom of file for color variables */
+
+    /* Customize the default size, color, and font for text*/
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: Tahoma, sans-serif; /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
+
+    /* Put space around the edges of the webpage */
+    margin: 50px;
+}
+
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+h1 {
+  color:#04222d;
+  text-align: center;
+    
+}
+
+h2 {
+  text-align: center;
+    
+}
+
+h3 {
+  text-align: center;
+    
+}
+
+h4 {
+  text-align: center;
+  font-family: "Times New Roman", sans-serif; 
+    
+}
+
+p {
+  text-align: center;
+  font-family: "Times New Roman", sans-serif; 
+    
+}
+
+li {
+  text-align: center;
+  font-family: "Times New Roman", sans-serif; 
+
+}
+
+a,
+a * {
+  text-align: center;
+    
+}
+
+button {
+    /* Example Style, replace with your own! */
+    background-color: rgb(239, 226, 238);    /* button color */
+    color: rgb(12, 11, 11);               /* text color */
+    border: 4mm ridge rgb(125, 201, 242);               /* hides the default border */
+    padding: 5px 12px;          /* space between button's text and edge */
+    border-radius: 5px;         /* curved edges instead of square */
+    cursor: pointer;            /* makes the cursor change when over button */
+    
+  }
+
+.button-wrapper {
+  display: flex;               /* enables flex layout */
+  justify-content: center;     /* centers the buttons horizontally */
+  gap: 20px;                   /* optional: space between the two buttons */
+}
+
+
+
+button:hover {
+    /* Make the button look different when the user hovers over it */
+}
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.header { /* Example A: This styles elements with class="header" */
+    
+}
+
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer { /* Example B: This styles elements with class="footer" */
+    
+}
+
+/*** Navbar [PLACEHOLDER] [ADDED IN UNIT 4] ***/
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+/*** Images ***/
+img {
+  display: block;             /* Centers better with margin auto */
+  margin: 20px auto;          /* Adds space around and centers */
+  border: 5px solid #000000;     /* Adds a visible dark border */
+  border-radius: 10px;        /* Rounds the corners */
+  max-width: 100%;            /* Keeps images from overflowing the screen */
+  height: auto;               /* Keeps the aspect ratio correct */
+}
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color: rgb(160, 205, 250);
+    --text-color: #000000;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}

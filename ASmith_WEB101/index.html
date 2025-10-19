@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+        
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <link rel="stylesheet" href="styles.css">
+        <title>Ariana's Portfolio</title>
+
+        <!-- webpage icon -->
+         <link rel="icon" href="https://www.pngkey.com/png/full/563-5632286_undertale-soul-integrity-heart-freetoedit.png">
+        <!-- ------------ -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+        <style>
+            .centered-list {
+            list-style-position: outside;   /* brings bullets into the text block */
+            text-align: left;            /* centers the text */
+            display: inline-block;         /* centers the whole list container */
+            margin: 0 auto;                /* centers horizontally */
+            padding: 1.2em;                    /* removes extra padding */
+}
+
+
+                        
+            .winky-sans {
+            font-family: "Winky Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            }
+            
+            #main-title {
+                font-family: "Winky Sans", sans-serif;
+                font-size: 55px;
+                color: rgb(233, 242, 250);
+                /*color: rgb(141, 195, 249);*/
+                -webkit-text-stroke: 1.5px rgb(45, 87, 186);
+            }
+
+            #internet{
+                font-family: 'Lucida Sans';
+                font-size: 20px;
+            }
+
+            #digital-showcase{
+                font-family:"Winky Sans";
+                color: rgb(41, 97, 200);
+                font-size: 35px;
+                
+            }
+
+            .header-wrapper {
+            text-align: center;  /* centers inline-block children */
+    }
+
+            #about-me{
+            font-size: 30px;
+            font-family: "Undertale";
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(3, 23, 31);
+            color: rgb(37, 221, 234);
+
+
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+            border-top: 2px solid rgb(0, 0, 0);    /* optional top/bottom borders */
+            border-bottom: 2px solid rgb(0, 0, 0);
+    
+            border-radius: 10px;
+            text-align: center;
+             
+            }
+
+            #intro{
+                font-family: "Winky Sans";
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+        <!-- navbar [PLACEHOLDER] [ADDED IN UNIT 4] -->
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+        
+        -->
+        <h1 id="main-title">Ariana's Portfolio</h1>
+        <h3 id="internet">Welcome to my Corner of the Internet :></h3>
+
+        <div class="button-wrapper">
+            <button type="button">Connect with me!</button>
+            <button type="button">View my projects!</button>
+        </div>
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+        --> 
+        <h2 id="digital-showcase">2025 Digital Showcase</h2>
+        <p>This exhibition details my academic and technical extracurricular
+            work, showcasing a canvas of projects and undertakings over my 
+            undergraduate studies.
+        </p>
+        
+        <ul class="centered-list">
+            <li><b>Prospecting Employers or Professors:</b>This site will act as a reference to my targeted expertise and
+            overarching "get to know me"!</li>
+            <li><b>Fellow students:</b>you find something interesting here and reach out!</li> 
+        </ul>
+
+        <h3 id="intro">What to Expect</h3>
+        <ul>
+            <li> <b>Detailed Experience:</b> <i>Description</i></li>
+            <li> <b>In-Depth Projects:</b> <i>Description</i></li>
+            <li> <b>Personal Endeavors:</b> <i>Description</i></li>
+        </ul>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <div class="header-wrapper">
+            <h2 id="about-me">About Me</h2>
+<figure>
+        <img 
+            alt="2025 ColorStack Stacked Up Summit Headshot" 
+            src="img/Stacked_Up_Summit.JPG" 
+            width="400" 
+            height="600"
+        />
+            <figcaption>2025 ColorStack Stacked Up Summit Headshot</figcaption>
+        
+</figure>
+        <h3 id="intro">Introduction</h3>
+        <p>Hi! I'm Ariana Smith, a 4th year undergraduate double majoring in Computer Science
+            and Statistics at the University of California, Davis. I'm currently
+            looking for SWE and Data Analyst internship and full-time 
+            opportunities. 
+        </p>
+
+
+        <figure>
+        <img 
+            alt="UCD Arboretum Water Tower" 
+            src="img/UCD_Watertower.jpg" 
+            width="400" 
+            height="600"
+        />
+            <figcaption>UCD Arboretum Water Tower</figcaption>
+        
+    </figure>
+        <h3 id="intro">Why CS + Stats?</h3>
+        <p>I initially started my journey into the technical field as an undeclared, unaware freshman. 
+            After completing ECS 32A, my first coding course, I realized a growing passion for the technical
+            and logical expression that CS has to offer. Throughout the next two years ... etc.
+        </p>
+
+        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2>Links</h2>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="block" href="https://www.codepath.org">
+            <article>
+                <h3>Link title</h3>
+                <p>Link description</p>
+            </article>
+        </a>
+            
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+
+    </body>
+</html>
